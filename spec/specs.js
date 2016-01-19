@@ -18,4 +18,8 @@ describe('leapYear', function() {
   it("is false for non-numerical values", function() {
   expect(leapYear("asdf")).to.equal(false);
   });
+
+  it("is false for values less than 0", function() {
+  expect(leapYear(-1)).to.equal(false);
+  });
 });
